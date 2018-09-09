@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import birthdayCake from '../assets/birthday-cake.jpg'
+
 
 class Age extends Component {
 	
@@ -22,6 +24,7 @@ class Age extends Component {
 		<div>
 		  <h3> {this.props.date}</h3>
 		  <h4> Currently, {this.timeSince(this.props.date)} </h4>
+		  <img src={birthdayCake} alt='birthday-cake' className= 'birthdayCake'/>
 		</div>
 		)
 	}
